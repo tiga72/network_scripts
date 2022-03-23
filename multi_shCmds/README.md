@@ -15,11 +15,6 @@ To set the path for the 2 files, see line 17 and line 34
 Also notice the outer loop is at line 17 and inner loop is at line 34
 To set the username and password. See line 15 and line 20
 
-One important point. 
-We always need to have a exit cmd at the end of the cmd list so that the 
-script knows when to exit the inner loop
-
-
 **Sequence:**
 
 1. Setup the 2 input files; set username and password (See General info)
