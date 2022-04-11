@@ -29,7 +29,7 @@ How to run script: bash transpose.sh input_file
 
 1. input file requirements
 
-<<vertical input file>>
+vertical input file:
 Important!! Input syntax requirements: Sections(vertical) of file to be separated by newline ("")
 ---------------------
 Input example(vertical): 
@@ -42,7 +42,7 @@ ip address 2.2.2.2
 description ex2
 ---------------------
 
-<<horizontal input file>>
+horizontal input file:
 Important!! Input syntax requirements: Each line and field/column separated by comma(Includes eol)
 ---------------------
 Input example(horizontal): 
