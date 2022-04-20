@@ -31,7 +31,8 @@ How to run script: bash transpose.sh input_file
 
 vertical input file:
 Important!! Input syntax requirements: Sections(vertical) of file to be separated by newline ("")
----------------------
+
+
 Input example(vertical): 
 interface Gi0/0
 ip address 1.1.1.1
@@ -40,15 +41,15 @@ description ex1
 interface Gi0/1
 ip address 2.2.2.2
 description ex2
----------------------
+
 
 horizontal input file:
 Important!! Input syntax requirements: Each line and field/column separated by comma(Includes eol)
----------------------
+
 Input example(horizontal): 
 interface Gi0/0,ip address 1.1.1.1, description ex1,
 interface Gi0/1,ip address 2.2.2.2, description ex2,
----------------------
+
 
 ## Setup
 ```
