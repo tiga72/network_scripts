@@ -7,13 +7,15 @@ TextFSM is a library created by Google to handle output from network devices
 
 Script autmotically selects the template to use based on the keywords found inside the input file
 It supports the conversion of 5 common cisco clis into csvs
---------------
+
+```
 show cdp neighbor detail
 show version
 show ip interface brief
 show ip bgp summary
 show inventory
----------------
+```
+
 Script requires the following 2 files to run:
 The Input file:
 This is the raw cli output from one or more devices 
