@@ -1,0 +1,13 @@
+Value Filldown hostname (\S+)
+Value Filldown RouterID (\S+)
+Value Filldown LocalAS (\d+)
+Value RemoteAS (\d+)
+Value Required RemoteIP (\d+(\.\d+){3})
+Value Up_down (\S+)
+Value StatePfxRcd (\S+)
+
+
+Start
+  ^Connecting to ${hostname}
+  ^BGP router identifier ${RouterID}, local AS number ${LocalAS}
+  ^${RemoteIP}\s+\d+\s+${RemoteAS}(\s+\S+){5}\s+${Up_down}\s+${StatePfxRcd} -> Record

@@ -1,0 +1,13 @@
+Value Filldown LOCAL_HOST (\S+)
+Value Required DEST_HOST (\S+)
+Value MGMNT_IP (.*)
+Value PLATFORM (.*)
+Value LOCAL_PORT (.*)
+Value REMOTE_PORT (.*)
+
+Start
+  ^Connecting to ${LOCAL_HOST}
+  ^Device ID:\s*${DEST_HOST}
+  ^\s+.+ddress: ${MGMNT_IP}
+  ^Platform: ${PLATFORM},
+  ^Interface: ${LOCAL_PORT},\s+Port ID \(outgoing port\): ${REMOTE_PORT} -> Record

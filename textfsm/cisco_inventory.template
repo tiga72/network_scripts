@@ -1,0 +1,11 @@
+Value Filldown hostname (\S+)
+Value name (.+) 
+Value description (.*) 
+Value productid (\S*) 
+Value vid (\S*) 
+Value serialnumber (\S*) 
+
+Start 
+  ^Connecting to ${hostname}
+  ^NAME: "${name}",\s+DESCR: "${description}" 
+  ^PID: ${productid}\s+,\s+VID: ${vid}\s+,\s+SN: ${serialnumber} -> Record
